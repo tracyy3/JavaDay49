@@ -4,20 +4,19 @@ public class DivideMethods {
     public static void main (String[] args){
         Scanner scanner = new Scanner(System.in);
 
-
         System.out.println("Enter a number:");
-        int num1 = Integer.valueOf(scanner.nextLine());
+        int number1 = Integer.valueOf(scanner.nextLine());
 
         System.out.println("Enter another number:");
-        int num2 = Integer.valueOf(scanner.nextLine());
+        int number2 = Integer.valueOf(scanner.nextLine());
 
-        double num3 = divide( num1, num2);
+        double number3 = divide( number1, number2);
 
-        System.out.println(num1+ " / " + num2 + " = " + num3);
-    }
+        System.out.println(number1+ " / " + number2 + " = " + number3);
+}
 
-    public static double divide (double firstnum,  double secondnum) {
-    return (firstnum / secondnum);
+    public static double divide (double firstnumber,  double secondnumber) {
+    return (firstnumber / secondnumber);
     }
 }
 
@@ -33,7 +32,7 @@ class MethodReturnTypes {
         System.out.println(number);
 
         int num1 =13;
-        if(trueOrFalse(num1)==true){
+        if(trueOrFalse(num1) == true){
             System.out.println("true");
         }else{
             System.out.println("false");
@@ -43,6 +42,7 @@ class MethodReturnTypes {
     public static String methodString() {
         return "String of text";
 }
+
     public static int methodInt(){
         int num = 5;
             return num;
@@ -59,24 +59,25 @@ class AverageMethod{
     public static void main(String[]args){
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Enter first number");
-        int num1 = scan.nextInt();
+        System.out.println("Enter first number!");
+        int number1 = scan.nextInt();
 
-        System.out.println("Enter second number");
-        int num2 = scan.nextInt();
+        System.out.println("Enter second number!");
+        int number2 = scan.nextInt();
         
-        System.out.println("Enter third number");
-        int num3 = scan.nextInt();
+        System.out.println("Enter third number!");
+        int number3 = scan.nextInt();
 
-        System.out.println("The average is: " + averageofNums(num1, num2, num3));
+        System.out.println("The average is: " + averageofNums(number1, number2, number3));
+}
 
-    }
-    public static int sumNum( int num1, int num2, int num3){
-        int sum = num1 + num2 + num3;
+    public static int sumNum( int number1, int number2, int number3){
+        int sum = number1 + number2 + number3;
         return sum; 
-    }
-    public static double averageofNums(int num1, int num2, int num3){
-        double average =(int)sumNum(num1, num2, num3)/ 3.0;
+}
+
+    public static double averageofNums(int number1, int number2, int number3){
+        double average =(int)sumNum(number1, number2, number3)/ 3.0;
         return average; 
     }
 }
